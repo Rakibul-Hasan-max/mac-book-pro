@@ -12,9 +12,13 @@ body{
 .total-border{
     border-top: 1px solid black;
 }
-.article{
-    
-}
-#bottom-text{
+.bottom-text{
     text-align: center;
+}
+.apply-btn{
+    background-color: #e40000cb;
+    color: white;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 3px;
 }
