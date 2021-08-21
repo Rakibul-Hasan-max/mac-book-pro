@@ -102,9 +102,7 @@ document.getElementById('btn-apply').addEventListener('click', function(){
     const couponClick = document.getElementById('promo-input');
     const couponNum = couponClick.value;
     console.log(couponNum);
+    if(couponNum == 'stevekaku'){
+        return 0.2;}
+    else {return 0;} 
 })
-    function couponNum(couponClick) {
-        if(couponClick == 'stevekaku') {
-            return 0.2;}
-        else {return 0;}
-        }
