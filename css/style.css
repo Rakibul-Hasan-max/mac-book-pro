@@ -9,9 +9,6 @@ body{
     margin-right: 150px;
     column-gap: 100px;
 }
-.total-border{
-    border-top: 1px solid black;
-}
 .bottom-text{
     text-align: center;
 }
@@ -21,4 +18,17 @@ body{
     padding: 5px 10px;
     border: 0;
     border-radius: 3px;
+}
+table, th, td{
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+    text-align: left;
+}
+.bottom{
+    border-bottom: 0.5px solid #00000098;
+}
+.bottom-total{
+    border-bottom: 1.5px solid #000000fa;
 }
