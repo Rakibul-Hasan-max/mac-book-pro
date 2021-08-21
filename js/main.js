@@ -95,3 +95,16 @@ document.getElementById('btn-delivery').addEventListener('click', function(){
     const updateTotalPrice = currentTotalPrice + 20;
     totalCost.innerText = updateTotalPrice;
 })
+
+
+//update total price using coupon code
+document.getElementById('btn-apply').addEventListener('click', function(){
+    const couponClick = document.getElementById('promo-input');
+    const couponNum = couponClick.value;
+    console.log(couponNum);
+})
+    function couponNum(couponClick) {
+        if(couponClick == 'stevekaku') {
+            return 0.2;}
+        else {return 0;}
+        }
