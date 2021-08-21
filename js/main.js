@@ -5,6 +5,13 @@ document.getElementById('btn-memory').addEventListener('click', function(){
     const memoryPrice = parseInt(memoryText);
     const extraMemoryPrice = memoryPrice + 180; 
     memoryCost.innerText = extraMemoryPrice;
+
+    //update total price
+    const totalCost = document.getElementById('total-cost');
+    const currentTotal = totalCost.innerText;
+    const currentTotalPrice = parseInt(currentTotal);
+    const updateTotalPrice = currentTotalPrice + 180;
+    totalCost.innerText = updateTotalPrice;
 })
 
 
@@ -15,6 +22,13 @@ document.getElementById('btn-storage-mid').addEventListener('click', function(){
     const storagePrice = parseInt(storageText);
     const extraStoragePrice = storagePrice + 100; 
     storageCost.innerText = extraStoragePrice;
+
+    //update total price
+    const totalCost = document.getElementById('total-cost');
+    const currentTotal = totalCost.innerText;
+    const currentTotalPrice = parseInt(currentTotal);
+    const updateTotalPrice = currentTotalPrice + 100;
+    totalCost.innerText = updateTotalPrice;
 })
 
 
@@ -25,6 +39,13 @@ document.getElementById('btn-storage-top').addEventListener('click', function(){
     const storagePrice = parseInt(storageText);
     const extraStoragePrice = storagePrice + 180; 
     storageCost.innerText = extraStoragePrice;
+
+    //update total price
+    const totalCost = document.getElementById('total-cost');
+    const currentTotal = totalCost.innerText;
+    const currentTotalPrice = parseInt(currentTotal);
+    const updateTotalPrice = currentTotalPrice + 180;
+    totalCost.innerText = updateTotalPrice;
 })
 
 
@@ -35,14 +56,11 @@ document.getElementById('btn-delivery').addEventListener('click', function(){
     const deliveryPrice = parseInt(deliveryText);
     const extraDeliveryPrice = deliveryPrice + 20; 
     deliveryCost.innerText = extraDeliveryPrice;
-})
 
-
-
-//update total price
-document.getElementById('btn-memory').addEventListener('click', function(){
+    //update total price
     const totalCost = document.getElementById('total-cost');
     const currentTotal = totalCost.innerText;
-    const currentTotalPrice = parseint(currentTotal);
-    const updateTotalPrice = currentTotalPrice + 180;
+    const currentTotalPrice = parseInt(currentTotal);
+    const updateTotalPrice = currentTotalPrice + 20;
     totalCost.innerText = updateTotalPrice;
+})
