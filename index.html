@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        button:hover{
+            background-color: #131010;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <!-- main part start -->
@@ -28,18 +34,18 @@
                     <div>
                         <h4>Memory</h4>
                         <button>8GB unfield memory</button>
-                        <button>16GB unfield memory</button>
+                        <button id="btn-memory">16GB unfield memory</button>
                     </div> <br>
                     <div>
                         <h4>Storage</h4>
                         <button>256GB SSD storage</button>
-                        <button>512GB SSD storage</button>
-                        <button>1TB SSD storage</button>
+                        <button id="btn-storage-mid">512GB SSD storage</button>
+                        <button id="btn-storage-top">1TB SSD storage</button>
                     </div> <br>
                     <div>
                         <h4>Choose your delivery option</h4>
                         <button>Friday, Aug 25 free Prime Delivery</button>
-                        <button>Friday, Aug 21 Delivery charge $20</button>
+                        <button id="btn-delivery">Friday, Aug 21 Delivery charge $20</button>
                     </div> <br> <br>
                     
                     <!-- this is table section -->
@@ -51,19 +57,19 @@
                             </tr>
                             <tr class="bottom">
                                 <th>Extra Money Cost</th>
-                                <th>$0</th>
+                                <th>$<span id="memory-cost">0</span></th>
                             </tr>
                             <tr class="bottom">
                                 <th>Extra Storage Cost</th>
-                                <th>$0</th>
+                                <th>$<span id="storage-cost">0</span></th>
                             </tr>
                             <tr class="bottom-total">
                                 <th>Delivery Charge</th>
-                                <th>$0</th>
+                                <th>$<span id="delivery-cost">0</span></th>
                             </tr>
                             <tr>
                                 <th>Total Price</th>
-                                <th>$1299</th>
+                                <th>$<span id="total-cost">1299</span></th>
                             </tr>
                         </table>
                     </div>
