@@ -64,3 +64,34 @@ document.getElementById('btn-delivery').addEventListener('click', function(){
     const updateTotalPrice = currentTotalPrice + 20;
     totalCost.innerText = updateTotalPrice;
 })
+
+
+//update total price in footer
+document.getElementById('btn-memory').addEventListener('click', function(){
+    const totalCost = document.getElementById('total-cost-final');
+    const currentTotal = totalCost.innerText;
+    const currentTotalPrice = parseInt(currentTotal);
+    const updateTotalPrice = currentTotalPrice + 180;
+    totalCost.innerText = updateTotalPrice;
+})
+document.getElementById('btn-storage-mid').addEventListener('click', function(){
+    const totalCost = document.getElementById('total-cost-final');
+    const currentTotal = totalCost.innerText;
+    const currentTotalPrice = parseInt(currentTotal);
+    const updateTotalPrice = currentTotalPrice + 100;
+    totalCost.innerText = updateTotalPrice;
+})
+document.getElementById('btn-storage-top').addEventListener('click', function(){
+    const totalCost = document.getElementById('total-cost-final');
+    const currentTotal = totalCost.innerText;
+    const currentTotalPrice = parseInt(currentTotal);
+    const updateTotalPrice = currentTotalPrice + 180;
+    totalCost.innerText = updateTotalPrice;
+})
+document.getElementById('btn-delivery').addEventListener('click', function(){
+    const totalCost = document.getElementById('total-cost-final');
+    const currentTotal = totalCost.innerText;
+    const currentTotalPrice = parseInt(currentTotal);
+    const updateTotalPrice = currentTotalPrice + 20;
+    totalCost.innerText = updateTotalPrice;
+})
